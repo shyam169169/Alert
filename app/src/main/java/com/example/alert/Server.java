@@ -25,7 +25,7 @@ public class Server extends Thread {
     @Override
     public void run() {
         try {
-            Log.d("d1", "Server: Server starting at the port " + LISTENING_PORT);
+            Log.d("d1", "Server: Server starting at the port    " + LISTENING_PORT);
             serverSocket = new ServerSocket(LISTENING_PORT);
 
             Socket socket = null;
