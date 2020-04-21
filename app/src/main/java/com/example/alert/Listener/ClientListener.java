@@ -1,4 +1,4 @@
-package com.example.alert;
+package com.example.alert.Listener;
 
 import android.app.Activity;
 import android.util.Log;
@@ -11,12 +11,11 @@ import java.net.Socket;
  * Listens to all client messages and forwards it to dispatcher
  */
 public class ClientListener extends Thread {
-    private Activity activity = null;
     Socket socket = null;
     Dispatcher dispatcher = null;
-    public ClientListener(Socket socket, Activity activity, Dispatcher dispatcher){
+
+    public ClientListener(Socket socket, Dispatcher dispatcher){
         this.socket = socket;
-        this.activity = activity;
         this.dispatcher = dispatcher;
     }
 
